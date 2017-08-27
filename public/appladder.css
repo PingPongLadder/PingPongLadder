@@ -1,0 +1,214 @@
+p/***************************************************************
+						Modals Styling
+****************************************************************/
+.modal-lg {
+	width: 95% !important;
+	margin: 10px auto;
+}
+
+/***************************************************************
+						Page Styling
+****************************************************************/
+.ibm-title {
+	background-color: #000000; color:white
+}
+.ibm-modal-title {
+	background-color: #264A60; color:white
+}
+
+body {	background-color: white; }
+#modalThumbs{
+    .modal-width(700px);
+}
+.fade-in-out { 	transition: 0.25s linear all;	opacity: 1; }
+.fade-in-out.ng-hide { 	opacity: 0; }
+.space-div { min-height: 1vh }
+.colored-tooltip + .tooltip > .tooltip-inner {background-color: #0000ff; color: white ;font-size: 14px}
+.colored-tooltip + .tooltip > .tooltip-arrow { background-color: #0000ff; color: white;font-size: 14px}
+.colored-tooltip-green + .tooltip > .tooltip-inner {background-color: #008000; color: white; font-size: 14px}
+.colored-tooltip-green + .tooltip > .tooltip-arrow { background-color: #008000; color: white; font-size: 14px}
+.div-left-border		{ position: absolute; top: 0; left: 0px; min-width: 1vh; min-height: 100vh; background: black; }
+.div-right-border	 	{ position: absolute; top: 0; right: 0; min-width: 1vh; min-height: 100vh; background: black; }
+.div-bottom-border 		{ position: absolute; bottom: 0; left: 0px; width: 100%; height: 2vh; background: black; text-align: left; color: white; text-indent: 10px;}
+.chart-table {
+	border-left-width: 1px; border-left-style: solid;
+}
+.no-link {text-decoration: none; background-color: none;border: none;outline: none}
+.no-link:HOVER {text-decoration: none; background-color: none;border: none;outline: none}
+.no-link:VISITED {text-decoration: none; background-color: none;border: none;outline: none}
+.no-link:FOCUS {text-decoration: none; background-color: none;border: none;outline: none}
+
+/***************************************************************
+						Text Styling
+****************************************************************/
+.text-white {
+	color: white
+} 
+.text-turq {
+	color: #1ec8e6;
+}
+.clickable {
+	color: #1ec8e6;
+}
+.text-yellow {
+	color:yellow;
+}
+.link-white {
+	color: white;text-decoration: none; background-color: none;border: none;outline: none
+} 
+.link-white:HOVER{
+	color: white;text-decoration: none; background-color: none;border: none;outline: none
+} 
+.link-white:ACTIVE{
+	color: white;text-decoration: none; background-color: none;border: none;outline: none
+} 
+.link-white:LINK{
+	color: white;text-decoration: none; background-color: none;border: none;outline: none
+} 
+.link-white:AFTER{
+	color: white;text-decoration: none; background-color: none;border: none;outline: none
+} 
+.link-white:VISITED{
+	color: white;text-decoration: none;background-color: none;border: none;outline: none
+} .link-white:FOCUS{
+	color: white;text-decoration: none;background-color: none;border: none;outline: none
+} 
+/***************************************************************
+						Panels Styling
+****************************************************************/
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #F0F0F0;
+}
+.panel-title-sign {
+	font-size: 2vh;
+}
+.line-with-no-height {
+	margin: 0px;
+}
+.panel-title-hr {
+	line-height: 0px;
+	margin: 6px
+}
+/***************************************************************
+						Image Gallery
+****************************************************************/
+.image-gallery-container {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px; 
+	border-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: #101010;
+}
+.panel-container {
+	border-style: solid;
+	border-color: #eef2da;
+	border-width: 1px; 
+	border-radius: 15px;
+	padding: 15px;
+	background-color: white;
+}
+.clickable{
+	color: #1ec8e6;
+}
+
+.image-gallery-main-image-0 {
+	max-width: 90%;
+	max-height: 45vh;
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+    vertical-align: middle;	
+}
+.image-gallery-main-image-1 {
+	max-width: 45%;
+	max-height: 45vh;
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+    vertical-align: middle;	
+}
+.gallery-thumbnail {
+	border : 2px solid white;
+	width: 6%;
+	height: 6%;
+	margin: 0px;
+	padding: 0px
+}
+.gallery-thumbnail-active {
+	border : 6px solid #c3eaf0;
+	width: 6%;
+	height: 6%;
+	margin: 0px
+	padding: 0px
+}
+.gallery-thumbnail-favorite {
+	border : 2px solid yellow;
+	width: 6%;
+	height: 6%;
+	margin: 0px;
+	padding: 0px
+}
+.gallery-thumbnail-favorite-active {
+	border : 2px solid yellow;
+	outline : 2px solid #c3eaf0;
+	width: 6%;
+	height: 6%;
+	margin: 0px
+	padding: 0px
+}
+.gallery-favorite-thumbnail {
+	border : 2px solid white;
+	width: 10vh;
+	height: 10vh;
+}
+.gallery-favorite-thumbnail-active {
+	border : 5px solid #c3eaf0;
+	width: 10vh;
+	height: 10vh;
+}
+.gallery-button-full-screen {
+	position: absolute; 
+	top:0px; 
+	right:20px; 
+	padding:0px;
+}
+
+.image-info-progress-bar {
+	width: 0%; 
+	color: black; 
+	text-align: blue; 
+	background-color: lightblue; 
+	font-style: oblique; 
+	font-weight: bolder;
+}
+
+.modal-dialog-fullscreen {
+  width: 95%;
+  padding: 0;
+}
+
+.modal-content-fullscreen {
+  border-radius: 0;
+}
+
+.light-border {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #9c9c9c
+}
+.zero-width {
+	width: 1px;
+	
+}
+
+.table-row {
+	cursor: pointer;
+}
+.table-row:HOVER {
+	background-color: #f0f0f0
+}

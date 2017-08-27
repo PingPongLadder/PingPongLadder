@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ladderApp"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+  <title>Ping Pong Ladder</title>
+  	<script src="code/jquery-1.11.3.min.js"></script>
+    <script src="code/angular.min.js"></script>
+    <script src="app.js"></script>
+  	<script src="code/parse.min.1.6.7.js"></script>
+		<link rel="stylesheet" href="code/bootstrap.min.css">
+		<link rel="stylesheet" href="code/bootstrap-theme.min.css">
+		<script src="code/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="appladder.css" />
+		<link rel="stylesheet" type="text/css" href="ibmladder.css" />
+  </head>
+  
+<body  ng-controller="LadderController as app" ng-init="app.init()">
+	<div style="background-color:black; color:white; font-size: 40px; font-weight: bold" class="text-center">Ping-Pong Ladder</div>
+	<br>
+	<section ng-show="appStatus < 2">
+		<center><img src="loading.gif"></center>
+	</section>
+	<section ng-show="appStatus == 2">
+
+	<div class="row">
+	<div class="col-sm-7 text-center">
+		<div class="jumbotron" style="padding:5px; margin: 2px">
+			<h2>This is the current Ladder</h2>
+			<hr>
+			<center>
+				<table border="1" width="90%">
+					<tr  style="background-color:#bbbbbb">
+						<td style="padding:10px">
+							
+						</td>
+						<td style="padding:10px">
+							<center>
+								<h5 style="font-weight: bold">Rank</h5>
+							</center>
+						</td>
+						<td style="padding:10px">
+							<center>
+								<h5 style="font-weight: bold">Change</h5>
+							</center>
+						</td>
+						<td style="padding:10px">
+							<h5 style="font-weight: bold">Player Name</h5>
+						</td>
+					</tr>
+					<tr ng-repeat="player in app.players" >
+						<td style="padding: 5px; font-size: 15px" width="10%" class="text-center">
+								<i ng-click="app.removePlayer(player.id)" class="glyphicon glyphicon-trash"></i>
+							
+						</td>
+						<td style="padding: 10px; font-size: 15px" width="10%" class="text-center">
+							{{player.rank}}
+						</td>
+						<td style="padding: 10px; font-size: 15px" width="10%" class="text-center">
+							<i ng-show="player.change == 0" ng-hide="player.change != 0" class="glyphicon glyphicon-arrow-right" style="color:gray"></i>
+							<i ng-show="player.change == 1" ng-hide="player.change != 1" class="glyphicon glyphicon-arrow-up" style="color:green"></i>
+							<i ng-show="player.change == -1" ng-hide="player.change != -1" class="glyphicon glyphicon-arrow-down" style="color:red"></i>
+							
+						</td>
+						<td style="padding: 10px; font-size: 15px">
+							<a href="#" ng-click="app.showResults(player.id)" >{{player.name}}</a>
+						</td>
+					</tr>
+				</table>
+			</center>
+			<br>
+			</div>
+		</div>
+		<div class="col-sm-5 text-center">
+			<div class="jumbotron" style="padding:5px; margin: 2px">
+			<h2>Last 10 games</h2>
+			<hr>
+			<center>
+				<table border="1" width="95%">
+					<tr ng-repeat="game in app.lastGames" >
+						<td style="padding: 10px; font-size: 15px" width="30%" class="text-center">
+							{{game.p1}}
+						</td>
+						<td style="padding: 10px; font-size: 15px" width="18%" class="text-center">
+							{{game.s1}}
+						</td>
+						<td style="padding: 10px; font-size: 15px" width="4%" class="text-center">
+						
+							<i ng-show="game.winner == 1" class="glyphicon glyphicon-arrow-left" style="color:#aaaaaa"></i>
+							<i ng-show="game.winner == 2" class="glyphicon glyphicon-arrow-right" style="color:#cccccc"></i>
+
+						</td>
+						<td style="padding: 10px; font-size: 15px" width="18%" class="text-center">
+							{{game.s2}}
+						</td>
+						<td style="padding: 10px; font-size: 15px" width="30%" class="text-center">
+							{{game.p2}}
+						</td>
+					</tr>
+				</table>
+			</center>
+			<br>
+			</div>
+
+
+		</div>
+	</div>
+  <!-- Modal -->
+  <div class="modal fade" id="modalLatestScores" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+        	<center>
+          <table width="80%" border="1">
+          	<tr ng-repeat="g in app.games">
+          		<td width="35%" class="text-center">{{g.p1}}</td>
+          		<td width="13%" class="text-center">{{g.s1}}</td>
+          		<td width="4%" class="text-center">
+					<i ng-show="g.winner == 1" class="glyphicon glyphicon-arrow-left" style="color:#aaaaaa"></i>
+					<i ng-show="g.winner == 2" class="glyphicon glyphicon-arrow-right" style="color:#cccccc"></i>
+          		</td>
+          		<td width="13%" class="text-center">{{g.s2}}</td>
+          		<td width="35%" class="text-center">{{g.p2}}</td>
+          	</tr>
+          </table>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </section>
+</body>
+</html>

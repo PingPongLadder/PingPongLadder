@@ -1,0 +1,19 @@
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:05:23.177Z"}
+{"functionName":"hello","params":{"score":1337,"playerName":"Sean Plott","cheatMode":false},"level":"info","message":"Ran cloud function hello for user undefined with:\n  Input: {\"score\":1337,\"playerName\":\"Sean Plott\",\"cheatMode\":false}\n  Result: \"Hi\"","timestamp":"2017-08-23T11:06:10.804Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:10:07.090Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:19:34.450Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:24:37.982Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:31:12.583Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:32:15.677Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:33:12.196Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:35:44.725Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:37:51.243Z"}
+{"functionName":"hello","params":{"score":1337,"playerName":"Sean Plott","cheatMode":false},"level":"info","message":"Ran cloud function hello for user undefined with:\n  Input: {\"score\":1337,\"playerName\":\"Sean Plott\",\"cheatMode\":false}\n  Result: \"Hi\"","timestamp":"2017-08-23T11:38:00.266Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:38:31.813Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:44:55.800Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T11:56:38.965Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T13:14:02.127Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T13:15:07.081Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T13:16:29.458Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T13:18:04.444Z"}
+{"level":"info","message":"Parse LiveQuery Server starts running","timestamp":"2017-08-23T13:30:25.248Z"}
