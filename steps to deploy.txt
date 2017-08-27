@@ -1,3 +1,5 @@
+bluemix deploy
+
 0. get the git project: https://github.com/li3ro/TableTennisLadder
 1. create bluemix stage1 accound : https://console.stage1.bluemix.net
 2. login with ibm id
