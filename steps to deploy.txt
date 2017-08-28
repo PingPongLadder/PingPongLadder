@@ -3,12 +3,12 @@ bluemix deploy
 0. get the git project: https://github.com/li3ro/TableTennisLadder
 1. create bluemix stage1 accound : https://console.stage1.bluemix.net
 2. login with ibm id
-3. create app : Node.js server runtime
-4. copy the full address
-5. go to project root
-6. run those commands:
-7. cf api https://api.stage1.eu-gb.bluemix.net
-8. cf login -- sso
-9. go to the website to get the one time token
-10. paste in cli to complete login
-11. cf push 
+3. create app : SDK for Node.js (its a server runtime):
+3.1 give app name
+3.2 hostname
+3.3 download bluemix CLI via https://clis.ng.bluemix.net/ui/home.html
+3.4 go to project root and run cli's:
+3.4.1 connect : bluemix api https://api.stage1.eu-gb.bluemix.net
+3.4.2 bluemix login  -o yanivbo@il.ibm.com -s dev -sso
+3.5 go to the website to get the one time token	-  paste in cli to complete login
+3.5.1 cf push
