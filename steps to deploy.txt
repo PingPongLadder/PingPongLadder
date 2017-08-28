@@ -1,6 +1,12 @@
 bluemix deploy
 
 0. get the git project: https://github.com/li3ro/TableTennisLadder
+0.1 if you want to change the database to different mongoDB address, edit the file: index.js
+and change this line:
+var databaseUri = 'mongodb://dbuser:mfzx8qqq@ds153413.mlab.com:53413/pingpongladder';
+to whatever address u want..
+0.2 you can create free mongo lab account at mlab.com
+0.3 if new database created, make sure you create new database user / password with r/w permissions - and update index.js
 1. create bluemix stage1 accound : https://console.stage1.bluemix.net
 2. login with ibm id
 3. create app : SDK for Node.js (its a server runtime):
